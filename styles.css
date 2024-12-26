@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    height: 400px;
+}
+
+.display {
+    width: 95%;
+    height: 50px;
+    border: none;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    font-size: 1.5em;font-family: "Graduate", serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2em;
+    font-family: "Graduate", serif;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button.function {
+    background: #28a745;
+}
+
+button.function:hover {
+    background: #1e7e34;
+}
+
+button.pum {
+    background: #ff7c39;
+}
+
+button.clear {
+    background: #dc3545;
+}
+
+button.clear:hover {
+    background: #c82333;
+}
+
+.advanced-menu {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advanced-menu.open {
+    right: 0;
+}
+
+.advanced-menu button {
+    background: #6c757d;
+    color: white;
+}
+
+.advanced-menu button:hover {
+    background: #5a6268;
+}
